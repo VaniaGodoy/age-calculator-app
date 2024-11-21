@@ -25,8 +25,9 @@ O design é responsivo, garantindo que funcione bem em dispositivos móveis e de
 
 ## 🖥️ Visualização do Projeto
 
-Você pode visualizar o projeto acessando o seguinte link: https://github.com/VaniaGodoy/age-calculator-app
-Você pode visualizar o repositório acessando o seguinte link: https://github.com/VaniaGodoy/age-calculator-app
+Você pode visualizar o projeto acessando o seguinte link: https://vaniagodoy.github.io/age-calculator-app/ .
+
+Você pode visualizar o repositório acessando o seguinte link: https://github.com/VaniaGodoy/age-calculator-app .
 
 ---
 
@@ -52,10 +53,12 @@ Desktop
 
 ## 🧑‍💻 Autor
 Desenvolvido por: Vania Godoy - Descodificadas Trilha-3
+
 Desafio: Frontend Mentor - Age Calculator App
 
 ---
 
 ## 🌟 Agradecimentos
 A equipe da Frontend Mentor por criar desafios incríveis.
+
 A comunidade Descodificadas Trilha-3 pelo suporte e aprendizado compartilhado.
