@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,400;0,700;1,800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: hsl(259, 100%, 65%); Fundo preto para melhor contraste */
+    background-image: url(./images/fundo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    overflow: hidden;
+}
+
+#tsparticles {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+main{
+    padding: 1.25rem 0.9375rem; 
+    min-width: 23.4375rem; 
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px 15px 150px 15px;
+    border: 3px inset #b6cbfe;
+    padding: 2.5rem 1.5625rem; 
+    margin-top: 3.125rem;   
+    position: relative; 
+    z-index: 1;
+}
+
+.container_form{
+    display: flex; 
+    gap: 15px;
+}
+
+.container_inputs{    
+    margin-right: 15px;   
+}
+
+.label {
+    color:hsl(0, 1%, 44%);    
+    font-weight:700;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 0.75rem; 
+    margin-bottom: 0.1875rem; 
+}
+
+
+.input {
+    color:hsl(0, 1%, 44%); 
+    height: 3.125rem; 
+    border: solid hsl(0, 0%, 86%) 1px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem; 
+    font-weight: 400;
+    font-style: italic;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 0.3125rem; 
+    margin-bottom: 0.625rem; 
+}
+
+
+button{
+    background-color:hsl(0, 0%, 8%);
+    border:none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;    
+}
+
+button:hover {
+    background-color:hsl(0, 0%, 8%);
+    transition: 0.3s;
+  }
+button:focus {
+    background-color: hsl(259, 100%, 65%);
+  }
+
+#result p{
+    font-size: 3.125rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight:800;
+    font-style: italic;    
+}
+
+.result_number{
+    color:hsl(259, 100%, 65%);
+}
+
+
+.return_result{
+    position: relative;
+    height: 3.75rem;
+}
+
+.linha_hr{
+    background-color: hsl(0, 0%, 86%);
+    height: 0.06rem;
+    border:solid hsl(0, 0%, 86%) 1px;
+    width: 95%;
+    margin-top: 1.875rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.button_seta{
+    position: absolute;
+    z-index: 2;
+    margin-left: 10%;
+    
+    animation: button_seta 0.5s normal;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.msg_erro {
+    color:  hsl(0, 100%, 67%);
+    display: none;
+    font-size: 0.625rem;
+    margin-top: 0.125rem;
+    margin-bottom: 0.321rem;
+}
+
+.input-invalido {
+    border: 1px solid  hsl(0, 100%, 67%); 
+}
+.input-invalida {
+    color:  hsl(0, 100%, 67%);
+}
+
+@keyframes button_seta {     
+    from {left:0rem;}
+    to {left:5rem;}
+}
+
+footer{
+    margin: auto;
+    text-align: center;    
+    font-size: .9rem;
+    line-height: 1.2rem;
+    color:  rgb(245, 73, 179);
+}
+
+footer a{
+    color:  rgb(241, 226, 235);
+    text-decoration: none;
+}
+
+@media (min-width: 48rem) {
+    main {
+      padding: 2.75rem 0.937rem;
+      max-width: 90rem;
+      margin: 0 auto; 
+    }
+
+    .container{
+        padding: 2.5rem 1.75rem;
+        margin-top: 2rem;
+        width: 37.5rem;
+    } 
+    
+    .input {
+        font-size: 2rem;
+    }
+    
+    .button_seta {
+      margin-left: 65% ;
+    }
+
+    @keyframes button_seta {     
+        from {left:0rem;}
+        to {left:8.125rem;}
+    }
+
+    footer{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }    
+}
+  
+  
+  
+  
+  

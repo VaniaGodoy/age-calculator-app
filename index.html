@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<div lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+
+  <body>
+    <div id="tsparticles"></div>
+    <main>
+      <form>
+        <div class="container">
+          <div class="container_form">
+            <div class="container_inputs">
+              <label for="day" class="label">DAY</label>
+              <input class="input" type="text" id="day" name="day" placeholder="DD" size="2">
+              <span id="msgErroDay" class="msg_erro">This field is required</span>
+            </div>
+
+            <div class="container_inputs">
+              <label for="month" class="label">MONTH</label>
+              <input class="input" type="text" id="month" name="month" placeholder="MM" size="2">
+              <span id="msgErroMonth" class="msg_erro">This field is required</span>
+            </div>
+
+            <div class="container_inputs">
+              <label for="year" class="label">YEAR</label>
+              <input class="input" type="text" id="year" name="year" placeholder="YYYY" size="4">
+              <span id="msgErroYear" class="msg_erro">This field is required</span>
+            </div>
+          </div>
+
+          <div class="return_result">
+
+            <hr class="linha_hr">
+
+            <button class="button_seta">
+              <img src="./images/icon-arrow.svg" alt="seta para baixo">
+            </button>
+
+          </div>
+
+          <div id="result">
+            <p> <span class="result_number"> -- </span> years</p>
+            <p> <span class="result_number"> -- </span> months</p>
+            <p> <span class="result_number"> -- </span> days</p>
+          </div>
+          
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor -
+          2024<br></a>.
+        Coded by <a href="https://github.com/VaniaGodoy">Vania Godoy - Descodificadas Trilha-3</a>.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.10.0/tsparticles.bundle.min.js"></script>
+    <script src="tsparticles.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+
+  </html>
